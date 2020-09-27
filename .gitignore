@@ -1,4 +1,5 @@
 credentials.json
 *.xls
+*.url
 token.pickle
 archive/
