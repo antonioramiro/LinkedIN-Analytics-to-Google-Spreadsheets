@@ -1,10 +1,10 @@
 # Digital Marketing Dashboard
 
-This tool aims at easing the analysis of a company's online marketing performance. It was developed during a Summer Internship (2020) at [vohcolab.org] by [António Ramiro](https://antonioramiro.github.io/?utm_source=github&utm_medium=readme&utm_campaign=digital-marketing-tool), under the supervision of [Salomé Azevedo](https://pt.linkedin.com/in/salome-azevedo), Head of Digital Health at [Value for Health CoLab](vohcolab.org). 
+This tool aims at **easing the analysis of a company's online marketing performance**. It was developed during a Summer Internship (2020) at [Value for Health CoLab](vohcolab.org) by [António Ramiro](https://antonioramiro.github.io/?utm_source=github&utm_medium=readme&utm_campaign=digital-marketing-tool), under the supervision of [Salomé Azevedo](https://pt.linkedin.com/in/salome-azevedo), Head of Digital Health at [Value for Health CoLab](vohcolab.org). 
 
-This project comprised the design and creation of a proof of concept of a Digital Marketing Dashboard, that allows the Communication Manager at VoH CoLab to have a quick overview over all of the organization's online marketing.
+This project comprised the design and **creation of a proof of concept of a Digital Marketing Dashboard**, that allows the Communication Manager at VoH CoLab to have a quick overview over all of the organization's online marketing.
 
-The ultimate goal would be to provide an automated dashboard that integrates updated analytics from several sources, whether it be social networks, such as Linked-IN and Twitter, or Google Analytics all in one place.
+The ultimate goal would be to provide an **automated dashboard that integrates updated analytics from several sources**, whether it be social networks, such as Linked-IN and Twitter, or Google Analytics all in one place.
 
 As of September 2020, the tool is an **ongoing project** and is currently able to import excel spreadsheets, exported from Linked-IN's company analytics page, and update a Google Spreadsheet with said data - *comprehensive list of absent features at the end of this document*. The dashboard, where KPIs are computed, is not automatically created and is not included in this repository.
 
