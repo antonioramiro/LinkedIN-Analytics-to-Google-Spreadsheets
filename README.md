@@ -66,6 +66,8 @@ Feel free to contact me via e-mail (antonio.ramiro@tecnico.pt) if you have any q
 - You should not share `token.pickle` nor `credentials.json` to people you don't trust.
 - After the first run, you can share the `.url` shortcut with your team, so that they can also run the script to the same spreadsheet you're using. Their accounts should be added to the project and the spreadsheet file should have them as editors.
 - Deleting the `.url` file will create a new spreadsheet. If accidentally deleted, just create a new shortcut to the old spreadsheet.
+- The tool is highly dependant on the names of the `.xls` files exported from Linked-IN. They should not be changed.
+- You can find old `.xls` files from your previous runs at `/archive`, labelled with the date of import.
 
 # Developer notes
 
@@ -75,9 +77,9 @@ Feel free to contact me via e-mail (antonio.ramiro@tecnico.pt) if you have any q
 - Add more diverse KPIs
 - Currently, only sheets with temporal data are added correctly, since it's a straightforward process of appending the data. However, there are two additional types of data, that are currently not being updated the right way:
     - **Updates Aggregated Data**: Update data is comprised of a list of updates (posts) and its engagement data. This type of data is continuously changing, meaning that a Linked-IN post from a year ago can still receive interactions and therefore change its data. In order to always have the most recent data in the DMD, the goal would be to read the the excel source file and match it with the existing data in the Google Spreadsheet data. A cycle would run the posts in the source excel and update the information uploaded to the GDrive sheet previously. (This applies to the second sheet of the updates.xls, Update engagement - non-aggregated)
-    - **Demographics data**: Demographic data in the Excel files corresponds to sheets that only have two columns, one of them labelling the data and the second with the actual data. For instance, `vohcolab_followers_1600336927413.xls` > `Company size`, has in its first column the labels (0-3 people; 3-10 people; 10-50 people; etc...) and in the second column *how many people work in a company which fits each of the labels*. My idea to integrate this in the DMD would be to firstly create a column with all the labels and then append new columns, whose header would have the date in which the append happened. Note that to append new data, the left-most column has to be read, in order for the data placement to be correct (apples to apples). (Demographics data can be found in followers.xls in all but the first sheet and in visitors.xls in all but the first sheet)
-- A routine that verifies that the data being added isn't already there and, if there is, to skip it until new data is found (so that there are no repeated days.)
-- Add the remaining sheets as data sources (Update engagement, followers.xls all but the first sheet and in visitors.xls all but the first sheet)
+    - **Demographics data**: Demographic data in the Excel files corresponds to sheets that only have two columns, one of them labelling the data and the second with the actual data. For instance, `vohcolab_followers_1600336927413.xls` > `Company size`, has in its first column the labels (0-3 people; 3-10 people; 10-50 people; etc...) and in the second column *how many people work in a company which fits each of the labels*. My idea to integrate this in the DMD would be to firstly create a column with all the labels and then append new columns, whose header would have the date in which the append happened. Note that to append new data, the left-most column has to be read, in order for the data placement to be correct (apples to apples). (Demographics data can be found in followers.xls in all but the first sheet and in visitors.xls in all but the first sheet);
+- A routine that verifies that the data being added isn't already there and, if there is, to skip it until new data is found (so that there are no repeated days.);
+- Add the remaining sheets as data sources (Update engagement, followers.xls all but the first sheet and in visitors.xls all but the first sheet);
 - Edit date format to the european standard before sending it to the Spreadsheet;
 
 
@@ -90,7 +92,8 @@ Feel free to contact me via e-mail (antonio.ramiro@tecnico.pt) if you have any q
 - A progress bar, when running the script;
 - Remove the `.json` body from the `.py` file and place it elsewhere;
 - The `.json` in the `.py` file is hardcoded with the header of the `.xls` to be pasted in the new sheet. This process should be automated with a `for` cycle, that reads the `.xls` and creates the header automatically (not hard-coded)
-- Merge append-data process to a one command only operation, instead of one time for each sheet (see ['Writing multiple ranges'](https://developers.google.com/sheets/api/guides/values#writing_multiple_ranges))
+- Merge append-data process to a one command only operation, instead of one time for each sheet (see ['Writing multiple ranges'](https://developers.google.com/sheets/api/guides/values#writing_multiple_ranges));
+- The import function is **extremely** sensitive to the excel's file name. Instead, it could determine which file is which by its content, in a relative manner, and not 'harcodedly' parsing the file name and looking for the categorizing world (visitors, followes or updates).
 
 ## Great Ideas
 - Instead of using a Google Sheet as a database, use a tool specifically designed to serve as a database (MariaDB, mySQL, MongoDB, Firebase);
