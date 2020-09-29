@@ -92,10 +92,10 @@ def gSheetSetup():
         spreadsheet = { 
             "properties": { "title": 'Digital Marketing Dashboard', "timeZone": "Europe/London"},
             "sheets": [ 
-                {"properties": { "title": 'Dashboard'} },
-                {"properties": { "title": 'Value Center'} },
-                {"properties": { "title": 'Updates'},
-                    "data": [{ "startRow": 0, "startColumn": 0, "rowData": [ { "values": [ { "userEnteredValue": { "stringValue": 'UpdateTitle', } }, { "userEnteredValue": { "stringValue": 'UpdateLink', } }, { "userEnteredValue": { "stringValue": 'UpdateType', } }, { "userEnteredValue": { "stringValue": 'Campaign name', } }, { "userEnteredValue": { "stringValue": 'Posted by', } }, { "userEnteredValue": { "stringValue": 'Created date', } }, { "userEnteredValue": { "stringValue": 'Campaign start date', } }, { "userEnteredValue": { "stringValue": 'Campaign end date', } }, { "userEnteredValue": { "stringValue": 'Audience', } }, { "userEnteredValue": { "stringValue": 'Impressions', } }, { "userEnteredValue": { "stringValue": 'VideoViews', } }, { "userEnteredValue": { "stringValue": 'Clicks', } }, { "userEnteredValue": { "stringValue": 'CTR', } }, { "userEnteredValue": { "stringValue": 'Likes', } }, { "userEnteredValue": { "stringValue": 'Comments', } }, { "userEnteredValue": { "stringValue": 'Shares', } }, { "userEnteredValue": { "stringValue": 'Follows', } }, { "userEnteredValue": { "stringValue": 'EngagementRate', } }, { "userEnteredValue": { "stringValue": 'ApplauseRate', } } ] }, ], } ], },
+                #{"properties": { "title": 'Dashboard'} },
+                #{"properties": { "title": 'Value Center'} },
+                #{"properties": { "title": 'Updates'},
+                #   "data": [{ "startRow": 0, "startColumn": 0, "rowData": [ { "values": [ { "userEnteredValue": { "stringValue": 'UpdateTitle', } }, { "userEnteredValue": { "stringValue": 'UpdateLink', } }, { "userEnteredValue": { "stringValue": 'UpdateType', } }, { "userEnteredValue": { "stringValue": 'Campaign name', } }, { "userEnteredValue": { "stringValue": 'Posted by', } }, { "userEnteredValue": { "stringValue": 'Created date', } }, { "userEnteredValue": { "stringValue": 'Campaign start date', } }, { "userEnteredValue": { "stringValue": 'Campaign end date', } }, { "userEnteredValue": { "stringValue": 'Audience', } }, { "userEnteredValue": { "stringValue": 'Impressions', } }, { "userEnteredValue": { "stringValue": 'VideoViews', } }, { "userEnteredValue": { "stringValue": 'Clicks', } }, { "userEnteredValue": { "stringValue": 'CTR', } }, { "userEnteredValue": { "stringValue": 'Likes', } }, { "userEnteredValue": { "stringValue": 'Comments', } }, { "userEnteredValue": { "stringValue": 'Shares', } }, { "userEnteredValue": { "stringValue": 'Follows', } }, { "userEnteredValue": { "stringValue": 'EngagementRate', } }, { "userEnteredValue": { "stringValue": 'ApplauseRate', } } ] }, ], } ], },
                 {"properties": { "title": 'Update Metrics', },
                     "data": [{ "startRow": 0, "startColumn": 0, "rowData": [ { "values": [ { "userEnteredValue": { "stringValue": 'Date', } }, { "userEnteredValue": { "stringValue": 'Impressions (organic)', } }, { "userEnteredValue": { "stringValue": 'Impressions (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Impressions (total)', } }, { "userEnteredValue": { "stringValue": 'Unique impressions (organic)', } }, { "userEnteredValue": { "stringValue": 'Clicks (organic)', } }, { "userEnteredValue": { "stringValue": 'Clicks (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Clicks (total)', } }, { "userEnteredValue": { "stringValue": 'Reactions (organic)', } }, { "userEnteredValue": { "stringValue": 'Reactions (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Reactions (total)', } }, { "userEnteredValue": { "stringValue": 'Comments (organic)', } }, { "userEnteredValue": { "stringValue": 'Comments (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Comments (total)', } }, { "userEnteredValue": { "stringValue": 'Shares (organic)', } }, { "userEnteredValue": { "stringValue": 'Shares (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Shares (total)', } }, { "userEnteredValue": { "stringValue": 'Engagement rate (organic)', } }, { "userEnteredValue": { "stringValue": 'Engagement rate (sponsored)', } }, { "userEnteredValue": { "stringValue": 'Engagement rate (total)', } } ] }, ], } ], },
                 {"properties": { "title": 'New followers', }, 
@@ -130,11 +130,7 @@ def gSheetSetup():
         spreadsheetID = lines[4].rsplit('/')[5]
         f.close()
         
-
-        
-
-
-        ##KPIs:
+        ##KPIs: adding KPIs
         #newValues = []
 
         ##applause rate
