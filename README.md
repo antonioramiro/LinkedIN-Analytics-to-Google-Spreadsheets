@@ -1,8 +1,8 @@
-# LinkedIN Analytics to Google-Sheets
+# LinkedIN Analytics to Google Spreadsheet
 
 This tool aims at **easing the analysis of a company's online marketing performance**. It was developed during a Summer Internship (2020) at [Value for Health CoLab](vohcolab.org) by [António Ramiro](https://antonioramiro.github.io/?utm_source=github&utm_medium=readme&utm_campaign=LinkedIN-Analytics-to-Google-Sheets), under the supervision of [Salomé Azevedo](https://pt.linkedin.com/in/salome-azevedo), Head of Digital Health at [Value for Health CoLab](vohcolab.org). 
 
-The internship comprised the design and **creation of a proof of concept of a Digital Marketing Dashboard**, that allows the Communication Manager at VoH CoLab to have a quick overview over all of the organization's online marketing. This repository is the first step of the dashboard and encompasses the importation of data from Linked-IN's company analytics page to a Google Spreadsheet, that it can subsequently update, when provided more data.
+The internship comprised the design and **creation of a proof of concept of a Digital Marketing Dashboard**, that allows the Communication Manager at VoH CoLab to have a quick overview over all of the organization's online marketing. This repository is the first step of the dashboard and encompasses the **importation of data from Linked-IN's company analytics page to a Google Spreadsheet, that it can subsequently update, when provided more data.**
 
 The ultimate goal would be to provide an **automated dashboard that integrates updated analytics from several sources**, whether it be social networks, such as Linked-IN and Twitter, or Google Analytics all in one place. The dashboard, where KPIs are computed, is not automatically created and is not included in this repository.
 
