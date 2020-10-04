@@ -100,3 +100,4 @@ Feel free to contact me via e-mail (antonio.ramiro@tecnico.pt) if you have any q
 - Instead of serving content in a Google Spreadsheet-crafted dashboard, display data in a modern looking web page (example: mkt.vohcolab.org);
 
 
+SQLite
